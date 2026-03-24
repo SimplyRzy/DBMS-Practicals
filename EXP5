@@ -12,7 +12,7 @@ INSERT INTO Employee VALUES
 (5, 'Karan', 'Finance', 40000),
 (6, 'Riya', 'Finance', 45000);
 
-SELECT department, AVG(salary) AS avd salary
+SELECT department, AVG(salary) AS avg_salary
 FROM Employee
 HAVING AVG(salary) > 40000
 GROUP BY department
