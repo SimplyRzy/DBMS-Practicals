@@ -1,0 +1,19 @@
+CREATE TABLE Employee (
+emp id INT PRIMARY KEY.
+emp name VARCHAR(50), department VARCHAR(50).
+salary INT
+);
+
+INSERT INTO Employee VALUES
+(1, 'Amir', 'HR', 30000),
+(2, 'Neha', 'TT', 50000),
+(3. Raj', 'IT', 60000),
+(4, 'Sneha', 'HR', 35000),
+(5, 'Karan', 'Finance', 40000),
+(6, 'Riya', 'Finance', 45000);
+
+SELECT department, AVG(salary) AS avd salary
+FROM Employee
+HAVING AVG(salary) > 40000
+GROUP BY department
+ORDER BY avg salary DESC:
