@@ -18,3 +18,29 @@ FROM Employee
 GROUP BY department
 HAVING AVG(salary) > 40000
 ORDER BY avg_salary DESC;
+
+
+
+
+
+
+
+CREATE TABLE Employee (
+emp_id INT PRIMARY KEY,
+emp_name VARCHAR(50),
+department VARCHAR(50),
+salary INT
+);
+
+INSERT INTO Employee VALUES (1, 'Amit', 'HR', 30000);
+INSERT INTO Employee VALUES (2, 'Neha', 'IT', 50000);
+INSERT INTO Employee VALUES (3, 'Raj', 'IT', 60000);
+INSERT INTO Employee VALUES (4, 'Sneha', 'HR', 35000);
+INSERT INTO Employee VALUES (5, 'Karan', 'Finance', 40000);
+
+INSERT INTO Employee VALUES (6, 'Riya', 'Finance', 45000);
+SELECT department, AVG(salary) AS avg_salary
+FROM Employee
+GROUP BY department
+HAVING AVG(salary) > 40000
+ORDER BY avg_salary DESC;
