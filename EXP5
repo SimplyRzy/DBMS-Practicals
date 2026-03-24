@@ -16,4 +16,4 @@ SELECT department, AVG(salary) AS avd salary
 FROM Employee
 HAVING AVG(salary) > 40000
 GROUP BY department
-ORDER BY avg salary DESC:
+ORDER BY avg salary DESC;
